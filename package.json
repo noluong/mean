@@ -1,0 +1,41 @@
+{
+  "name": "mean",
+  "version": "0.0.1",
+  "description": "Simple application.",
+  "main": "server.js",
+  "author": "nola",
+  "dependencies": {
+    "express": "~4.5.1",
+    "mongoose": "~3.8.18",
+    "body-parser": "~1.4.2"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-cli": "~0.1.13",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "gulp-rename": "~1.2.2",
+    "jshint": "~2.9.1-rc1",
+    "gulp-concat": "~2.6.0",
+    "gulp-jshint": "~2.0.0",
+    "gulp-uglify": "~1.5.1",
+    "gulp-sass": "~2.1.0",
+    "gulp-watch": "~4.3.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noluong/mean"
+  },
+  "scripts": {
+    "start": "grunt dev",
+    "test": "grunt test",
+    "postinstall": "bower install"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.4.x"
+  }
+}

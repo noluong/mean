@@ -1,0 +1,453 @@
+<section class="content-header">
+    <h1 class="pull-left">Dashboard<small>Header small text goes here...</small></h1>
+    <div class="pull-right">
+        <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li class="active">Dashboard</li>
+        </ol>
+    </div>
+</section>
+<section class="main-content">
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="panel panel-stat stat-primary">
+                <div class="panel-body">
+                    <div class="row mbxl">
+                        <div class="col-xs-8">
+                            <span class="stat-title">Visits Today</span>
+                            <h2 class="man">15.480</h2>
+                        </div>
+                        <div class="col-xs-4"><i class="ion-person-stalker"></i></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <span class="stat-title">New Visitors</span>
+                            <h4 class="man">46.5%</h4>
+                        </div>
+                        <div class="col-xs-6">
+                            <span class="stat-title">Bounce Rate</span>
+                            <h4 class="man">3.7%</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="panel panel-stat stat-pink">
+                <div class="panel-body">
+                    <div class="row mbxl">
+                        <div class="col-xs-8">
+                            <span class="stat-title">Pages View</span>
+                            <h2 class="man">350k</h2>
+                        </div>
+                        <div class="col-xs-4"><i class="ion-earth"></i></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <span class="stat-title">Duration</span>
+                            <h4 class="man">15:40</h4>
+                        </div>
+                        <div class="col-xs-6">
+                            <span class="stat-title">User Visits</span>
+                            <h4 class="man">26</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="panel panel-stat stat-success">
+                <div class="panel-body">
+                    <div class="row mbxl">
+                        <div class="col-xs-8">
+                            <span class="stat-title">Order This Month</span>
+                            <h2 class="man">240</h2>
+                        </div>
+                        <div class="col-xs-4"><i class="ion-stats-bars"></i></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <span class="stat-title">Last Month</span>
+                            <h4 class="man">150</h4>
+                        </div>
+                        <div class="col-xs-6">
+                            <span class="stat-title">Last Week</span>
+                            <h4 class="man">82</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="panel panel-stat stat-warning">
+                <div class="panel-body">
+                    <div class="row mbxl">
+                        <div class="col-xs-8">
+                            <span class="stat-title">Income This Month</span>
+                            <h2 class="man">$59,825</h2>
+                        </div>
+                        <div class="col-xs-4"><i class="ion-ribbon-a"></i></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <span class="stat-title">Last Month</span>
+                            <h4 class="man">$29,974</h4>
+                        </div>
+                        <div class="col-xs-6">
+                            <span class="stat-title">Last Week</span>
+                            <h4 class="man">$5,952</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel white">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><strong class="text-uppercase text-success">Revenues</strong></h3>
+                </div>
+                <div class="panel-body">
+                    <div id="graph-lines" style="width: 100%;height: 300px"></div>
+                    <div class="row revenues-sparklines">
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                            <div class="sparklines-block">
+                                <div class="sparklines4"></div>
+                            </div>
+                            <h3 class="mas">$3,462</h3>
+                            <p class="text-uppercase text-muted man">Earning</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                            <div class="sparklines-block">
+                                <div class="sparklines5"></div>
+                            </div>
+                            <h3 class="mas">403</h3>
+                            <p class="text-uppercase text-muted man">Orders</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                            <div class="sparklines-block">
+                                <div class="sparklines6"></div>
+                            </div>
+                            <h3 class="mas">1.968</h3>
+                            <p class="text-uppercase text-muted man">Sales</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel white">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><strong class="text-uppercase text-pink">Site Visits</strong></h3>
+                </div>
+                <div class="panel-body">
+                    <div id="graph-visitors" class="rickshaw_graph"></div>
+                    <div id="rickshaw-legend"></div>
+                    <div class="row visitor-sparklines">
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                            <div class="sparklines-block">
+                                <div class="sparklines1"></div>
+                            </div>
+                            <h3 class="mas">6.504</h3>
+                            <p class="text-uppercase text-muted man">Returning</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                            <div class="sparklines-block">
+                                <div class="sparklines2"></div>
+                            </div>
+                            <h3 class="mas">3.403</h3>
+                            <p class="text-uppercase text-muted man">New</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                            <div class="sparklines-block">
+                                <div class="sparklines3"></div>
+                            </div>
+                            <h3 class="mas">19.302</h3>
+                            <p class="text-uppercase text-muted man">Page Views</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="panel widget-tasks">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><strong class="text-uppercase text-primary">Tasks</strong></h3>
+                    <div class="actions"><a href="javascript:;" data-hover="tooltip" title="Completed tasks" data-placement="left" class="remove-tasks-completed text-primary"><i class="ion-compose fz18"></i></a></div>
+                </div>
+                <div class="panel-body">
+                    <div class="input-icon right"><i class="icon-plus text-primary"></i><input id="text-add-task" type="text" placeholder="Enter to new task..." class="form-control input-rounded input-dark"/></div>
+                </div>
+                <ul id="widget-tasks-list" class="list-group list-group-striped list-group-no-border">
+                    <li class="list-group-item">
+                        <span class="drag-drop"><i></i></span>
+                        <div class="checkbox"><label><input type="checkbox"/><span>Finish the TPS report</span></label></div>
+                        <div class="actions"><a href="javascript:;" class="edit"><i class="icon-pencil"></i></a><a href="javascript:;" class="delete"><i class="icon-close"></i></a></div>
+                        <div class="clearfix"></div>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="drag-drop"><i></i></span>
+                        <div class="checkbox"><label><input type="checkbox"/><span>Pick up dry cleaning</span></label></div>
+                        <div class="actions"><a href="javascript:;" class="edit"><i class="icon-pencil"></i></a><a href="javascript:;" class="delete"><i class="icon-close"></i></a></div>
+                        <div class="clearfix"></div>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="drag-drop"><i></i></span>
+                        <div class="checkbox"><label><input type="checkbox"/><span>Buy bread for dinner</span></label></div>
+                        <div class="actions"><a href="javascript:;" class="edit"><i class="icon-pencil"></i></a><a href="javascript:;" class="delete"><i class="icon-close"></i></a></div>
+                        <div class="clearfix"></div>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="drag-drop"><i></i></span>
+                        <div class="checkbox"><label><input type="checkbox"/><span>Weekly status meeting</span></label></div>
+                        <div class="actions"><a href="javascript:;" class="edit"><i class="icon-pencil"></i></a><a href="javascript:;" class="delete"><i class="icon-close"></i></a></div>
+                        <div class="clearfix"></div>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="drag-drop"><i></i></span>
+                        <div class="checkbox"><label><input type="checkbox"/><span>Book hotel for summer vacation</span></label></div>
+                        <div class="actions"><a href="javascript:;" class="edit"><i class="icon-pencil"></i></a><a href="javascript:;" class="delete"><i class="icon-close"></i></a></div>
+                        <div class="clearfix"></div>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="drag-drop"><i></i></span>
+                        <div class="checkbox"><label><input type="checkbox"/><span>Pay credit card bill</span></label></div>
+                        <div class="actions"><a href="javascript:;" class="edit"><i class="icon-pencil"></i></a><a href="javascript:;" class="delete"><i class="icon-close"></i></a></div>
+                        <div class="clearfix"></div>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="drag-drop"><i></i></span>
+                        <div class="checkbox"><label><input type="checkbox"/><span>Take out the trash and recycling</span></label></div>
+                        <div class="actions"><a href="javascript:;" class="edit"><i class="icon-pencil"></i></a><a href="javascript:;" class="delete"><i class="icon-close"></i></a></div>
+                        <div class="clearfix"></div>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="drag-drop"><i></i></span>
+                        <div class="checkbox"><label><input type="checkbox"/><span>Go to the Post Office</span></label></div>
+                        <div class="actions"><a href="javascript:;" class="edit"><i class="icon-pencil"></i></a><a href="javascript:;" class="delete"><i class="icon-close"></i></a></div>
+                        <div class="clearfix"></div>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="drag-drop"><i></i></span>
+                        <div class="checkbox"><label><input type="checkbox"/><span>Go Fishing with Diana</span></label></div>
+                        <div class="actions"><a href="javascript:;" class="edit"><i class="icon-pencil"></i></a><a href="javascript:;" class="delete"><i class="icon-close"></i></a></div>
+                        <div class="clearfix"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-heading image">
+                    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/twikito/128.jpg" alt="" class="img-responsive"/>
+                    <div class="card-heading-header">
+                        <h3 class="text-success">15 Inspiring Soap Packaging Designs</h3>
+                        <span>Published today - 08.34 AM</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+                <div class="card-media"><a href="#" class="card-media-container"><img src="http://joshd.com.au/media/large/Munich_small.jpg" alt="media" class="img-responsive"/></a></div>
+                <div class="card-actions"><button class="btn btn-warning">+1</button>&nbsp;<button class="btn btn-primary">Share</button></div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <h4 class="card-heading title text-pink">10 great websites for design inspiration</h4>
+                <div class="card-heading time">Published yesterday - 10.30 pM</div>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.
+                    </p>
+                </div>
+                <div class="card-comments">
+                    <div class="comments-collapse-toggle"><a data-toggle="collapse" data-target="#c1-comments" href="#c1-comments">2 comments
+                        &nbsp;<i class="fa fa-angle-down"></i></a>
+                    </div>
+                    <div id="c1-comments" class="comments collapse in">
+                        <div class="media">
+                            <a href="#" class="pull-left"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/ok/128.jpg" style="width: 28px; height: 28px;" class="media-object img-circle"/></a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Consectetur adipiscing</h4>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse...</p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <a href="#" class="pull-left"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/pixeliris/128.jpg" style="width: 28px; height: 28px;" class="media-object img-circle"/></a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Voluptatem sequi nesciunt</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="panel">
+                <div class="panel-body form">
+                    <form action="#">
+                        <div id="form-company-website">
+                            <h4 class="ptl pbl plsm prsm man"><span>Monthly Meeting</span><span class="pull-right"><i class="icon-calendar"></i></span></h4>
+                            <div class="list-group list-group-no-border">
+                                <div class="list-group-item"><span class="text-muted">Project:</span>&nbsp;<strong>Company Website</strong></div>
+                                <div class="list-group-item bg-default">
+                                    <p class="date"><strong>May, June 18th</strong></p>
+                                    <p>
+                                    <div class="col-md-6 from pln"><span class="text-muted">Starts at:</span>&nbsp;<strong>19:00</strong></div>
+                                    <div class="col-md-6 to pln"><span class="text-muted">Ends at:</span>&nbsp;<strong>20:00</strong></div>
+                                    </p>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="list-group-item text-center">
+                                    <p class="ptm man"><span class="text-muted">Participants:</span>&nbsp;<strong>4</strong></p>
+                                    <hr/>
+                                    <p class="man"><a href="#" class="mrm"><img src="http://api.randomuser.me/portraits/thumb/men/68.jpg" alt="User Image" width="40px" class="img-circle"/></a><a href="#" class="mrm"><img src="http://api.randomuser.me/portraits/thumb/women/39.jpg" alt="User Image" width="40px" class="img-circle"/></a><a href="#" class="mrm"><img src="http://api.randomuser.me/portraits/thumb/men/60.jpg" alt="User Image" width="40px" class="img-circle"/></a><a href="#"><img src="http://api.randomuser.me/portraits/thumb/women/38.jpg" alt="User Image" width="40px" class="img-circle"/></a></p>
+                                </div>
+                                <div class="list-group-item"><a href="#" class="btn btn-primary btn-block">Request an Invitation</a></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="panel">
+                <div class="panel-body form">
+                    <form action="#">
+                        <div id="form-marketing-materials">
+                            <h4 class="ptl pbl plsm prsm man"><span>New Specifications</span><span class="pull-right"><img src="http://api.randomuser.me/portraits/thumb/women/10.jpg" alt="" width="40px" class="avatar img-circle"/></span></h4>
+                            <div class="list-group list-group-no-border">
+                                <div class="list-group-item"><span class="text-muted">Project:</span>&nbsp;<strong>Marketing Materials</strong></div>
+                                <div class="list-group-item bg-default">
+                                    <p class="mbn text-muted">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="media">
+                                        <a href="#" class="pull-left"><img src="http://api.randomuser.me/portraits/thumb/men/60.jpg" alt="User Image" width="40px" class="media-object img-circle"/></a>
+                                        <div class="media-body">
+                                            <h5 class="media-heading">Pascal Aigner</h5>
+                                            <small class="text-muted">Neque porro quisquam est.</small>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <a href="#" class="pull-left"><img src="http://api.randomuser.me/portraits/thumb/women/39.jpg" alt="User Image" width="40px" class="media-object img-circle"/></a>
+                                        <div class="media-body">
+                                            <h5 class="media-heading">Paula Aderca</h5>
+                                            <small class="text-muted">Neque porro quisquam est, qui dolorem ipsum quia dolor sit.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item"><input type="text" placeholder="Add a comment..." class="input-dark form-control"/></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="panel">
+                <div class="panel-body form">
+                    <form action="#">
+                        <div id="form-landing-page">
+                            <h4 class="ptl pbl plsm prsm man"><span>UI of landing page</span><span class="pull-right"><label class="switch switch-success switch-sm"><input type="checkbox" checked=""/><span class="switch"></span></label></span></h4>
+                            <div class="list-group list-group-no-border">
+                                <div class="list-group-item"><span class="text-muted">Project:</span>&nbsp;<strong>Landing Page</strong></div>
+                                <div class="list-group-item bg-default">
+                                    <div class="info">
+                                        <div class="col-md-6 priority pln"><span class="text-muted"><i class="fa fa-circle text-warning mrs"></i>Priority:</span>&nbsp;<strong>High</strong></div>
+                                        <div class="col-md-6 due pln"><span class="text-muted">Due:</span>&nbsp;<strong>Today</strong></div>
+                                    </div>
+                                    <p class="mbn text-muted">Excepteur sint occaecat cupidatat.</p>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="media">
+                                        <a href="#" class="pull-left"><img src="http://api.randomuser.me/portraits/thumb/women/38.jpg" alt="User Image" width="40px" class="media-object img-circle"/></a>
+                                        <div class="media-body">
+                                            <h5 class="media-heading">Alice Walker</h5>
+                                            <small class="text-muted">Neque porro quisquam est.</small>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <a href="#" class="pull-left"><img src="http://api.randomuser.me/portraits/thumb/men/59.jpg" alt="User Image" width="40px" class="media-object img-circle"/></a>
+                                        <div class="media-body">
+                                            <h5 class="media-heading">John David</h5>
+                                            <small class="text-muted">Neque porro quisquam est, qui dolorem ipsum quia dolor sit.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item"><input type="text" placeholder="Add a comment..." class="input-dark form-control"/></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="panel">
+                <div class="panel-body form">
+                    <form action="#">
+                        <div id="form-users">
+                            <h4 class="ptl pbl plsm prsm man"><input type="text" placeholder="Search a member..." class="input-dark input-lg form-control"/></h4>
+                            <div class="list-group list-group-no-border">
+                                <div class="list-group-item">
+                                    <div class="media">
+                                        <a href="#" class="avatar pull-left"><img src="http://api.randomuser.me/portraits/thumb/men/60.jpg" alt="User Image" width="40px" class="media-object img-circle"/><i class="busy"></i></a>
+                                        <div class="media-body">
+                                            <h5 class="media-heading">John David</h5>
+                                            <small class="text-muted">CEO, Founder</small>
+                                            <div class="actions"><a href="javascript:;" class="edit"><i class="icon-pencil"></i></a><a href="javascript:;" class="delete"><i class="icon-close"></i></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <a href="#" class="avatar pull-left"><img src="http://api.randomuser.me/portraits/thumb/women/39.jpg" alt="User Image" width="40px" class="media-object img-circle"/><i class="online"></i></a>
+                                        <div class="media-body">
+                                            <h5 class="media-heading">Julia Howell</h5>
+                                            <small class="text-muted">Project Manager</small>
+                                            <div class="actions"><a href="javascript:;" class="edit"><i class="icon-pencil"></i></a><a href="javascript:;" class="delete"><i class="icon-close"></i></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <a href="#" class="avatar pull-left"><img src="http://api.randomuser.me/portraits/thumb/men/59.jpg" alt="User Image" width="40px" class="media-object img-circle"/><i class="busy"></i></a>
+                                        <div class="media-body">
+                                            <h5 class="media-heading">Arthur Wong</h5>
+                                            <small class="text-muted">Developer</small>
+                                            <div class="actions"><a href="javascript:;" class="edit"><i class="icon-pencil"></i></a><a href="javascript:;" class="delete"><i class="icon-close"></i></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <a href="#" class="avatar pull-left"><img src="http://api.randomuser.me/portraits/thumb/women/37.jpg" alt="User Image" width="40px" class="media-object img-circle"/><i class="idle"></i></a>
+                                        <div class="media-body">
+                                            <h5 class="media-heading">Amy Perry</h5>
+                                            <small class="text-muted">Frontend Designer</small>
+                                            <div class="actions"><a href="javascript:;" class="edit"><i class="icon-pencil"></i></a><a href="javascript:;" class="delete"><i class="icon-close"></i></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <a href="#" class="avatar pull-left"><img src="http://api.randomuser.me/portraits/thumb/men/57.jpg" alt="User Image" width="40px" class="media-object img-circle"/><i class="online"></i></a>
+                                        <div class="media-body">
+                                            <h5 class="media-heading">Brian Pierce</h5>
+                                            <small class="text-muted">Backend Designer</small>
+                                            <div class="actions"><a href="javascript:;" class="edit"><i class="icon-pencil"></i></a><a href="javascript:;" class="delete"><i class="icon-close"></i></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
