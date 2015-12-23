@@ -13,34 +13,24 @@
            <div class="panel">
                 <div class="panel-heading">
                     <h3 class="panel-title"><strong class="text-uppercase text-info">List Posts</strong></h3>
-                    <a ui-sref="post_create()" class="btn btn-danger">Add</a>
                 </div>
                 <div class="panel-body">
-                    <div ng-if="success">
-                      <div class="alert alert-success">
-                         <p ng-bind="success"></p>
-                      </div>
-                    </div>
-                    <div ng-if="error">
-                       <div class="alert alert-danger">
-                          <p ng-bind="error"></p>
-                       </div>
-                    </div>
                     <table class="table table-bordered mbn">
                         <thead>
                             <tr>
-                                <th>ID</th>
-                                <th>Title</th>
-                                <th>Action</th>
+                                <th><input type="checkbox" class="checkall"/></th>
+                                <th>Name</th>
+                                <th>Revenue</th>
+                                <th>Spark</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr ng-repeat="post in posts">
-                                <td><a ui-sref="post_detail({id: post._id})" ng-bind="post._id"></a></td>
-                                <td><a ui-sref="post_detail({id: post._id})" ng-bind="post.title"></a></td>
+                                <td style="width: 30px;"><input type="checkbox"/></td>
+                                <td><a ui-sref="detail({id: post._id})" ng-bind="post._id"></a></td>
+                                <td><a ui-sref="detail({id: post._id})" ng-bind="post.title"></a></td>
                                 <td>
-                                    <a ui-sref="post_edit({id: post._id})" class="btn btn-info">Edit</a>
-                                    <a ng-click="deletePost(post._id)" class="btn btn-danger">Delete</a>
+                                  fsdfsdf
                                 </td>
                             </tr>
                         </tbody>

@@ -1,0 +1,47 @@
+<section class="content-header">
+	<div class="pull-right">
+		<ol class="breadcrumb">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Forms</a></li>
+			<li class="active">Form Layouts</li>
+		</ol>
+	</div>
+</section>
+<section class="main-content" ng-controller="DetailPostController">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title"><strong class="text-uppercase" ng-bind="post.title"></strong></h3>
+				</div>
+				<div class="panel-body form">
+					<form action="#" class="form-horizontal" method="post">
+						<div class="form-body">
+							<div class="form-group">
+								<label class="col-md-4 control-label">Title</label>
+								<div class="col-md-8">{{post.title}}</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-4 control-label">Description</label>
+								<div class="col-md-8">{{post.description}}</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-4 control-label">content</label>
+								<div class="col-md-8">{{post.content}}</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-4 control-label">Priority</label>
+								<div class="col-md-8">{{post.priority}}</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-4 control-label">Status</label>
+								<div class="col-md-8" ng-if="post.status">Active</div>
+								<div class="col-md-8" ng-if="!post.status">Inactive</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

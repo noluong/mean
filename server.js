@@ -1,33 +1,46 @@
-//　module　=================
-var express    = require('express');
-var app        = express();
-var server     = require('http').createServer(app);
-// var mongoose   = require('mongoose');
-// var bodyParser = require('body-parser');
+// modules =================================================
+var express        = require('express');
+var app            = express();
+var bodyParser     = require('body-parser');
+var methodOverride = require('method-override');
+var mongoose       = require('mongoose');
 
-// configuration =================
-
+// configuration ===========================================
+    
 // config files
-// var db = require('./config/db');
-// mongoose.connect(db.url);
+var db = require('./config/db');
 
-var port = process.env.PORT || 8080;
+// set our port
+var port = process.env.PORT || 8080; 
+
+// connect to our mongoDB database 
+mongoose.connect(db.url); 
 
 // get all data/stuff of the body (POST) parameters
 // parse application/json 
-// app.use(bodyParser.json()); 
+app.use(bodyParser.json()); 
 
 // parse application/vnd.api+json as json
-// app.use(bodyParser.json({ type: 'application/vnd.api+json' })); 
+app.use(bodyParser.json({ type: 'application/vnd.api+json' })); 
 
 // parse application/x-www-form-urlencoded
-// app.use(bodyParser.urlencoded({ extended: true })); 
+app.use(bodyParser.urlencoded({ extended: true })); 
 
-app.use(express.static(__dirname + '/public'));
+// override with the X-HTTP-Method-Override header in the request. simulate DELETE/PUT
+app.use(methodOverride('X-HTTP-Method-Override')); 
 
-var routes = require('./app/routes');
-routes(app);
+// set the static files location /public/img will be /img for users
+app.use(express.static(__dirname + '/public')); 
 
-server.listen(port);
-console.log('Server is running on '+ port);
-exports = module.exports = app;
+// routes ==================================================
+require('./app/routes')(app); // pass our application into our routes
+
+// start app ===============================================
+// startup our app at http://localhost:8080
+app.listen(port);               
+
+// shoutout to the user                     
+console.log('Magic happens on port ' + port);
+
+// expose app           
+exports = module.exports = app;  
